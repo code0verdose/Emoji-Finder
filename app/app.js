@@ -47,12 +47,12 @@ data.forEach((item) => createItem(item.symbol, item.title, item.keywords));
 
 
 //Поиск по карточкам (item) v.0.1
-// let input = document.querySelector('#input')
+// const input = document.querySelector('#input')
 //
 // function inputSearch() {
-//     let item = document.querySelectorAll('.item');
+//     const item = document.querySelectorAll('.item');
 //     input.onchange = function () {
-//         let inputValue = input.value
+//         const inputValue = input.value
 //         for (let index of item) {
 //             if (index.querySelector(".item__title").textContent !== inputValue) {
 //                 index.style.display = 'none';
@@ -65,13 +65,13 @@ data.forEach((item) => createItem(item.symbol, item.title, item.keywords));
 
 
 // //Поиск по карточкам (item) v0.2
-// let input = document.querySelector('#input')
+// const input = document.querySelector('#input')
 //
 // function inputSearch() {
 //     let item = document.querySelectorAll('.item');
 //     input.oninput = function () {
-//         let inputValue = input.value;
-//         let newData = data.filter((item) => item.title.toLowerCase().includes(inputValue.toLowerCase().trim()));
+//         const inputValue = input.value;
+//         const newData = data.filter((item) => item.title.toLowerCase().includes(inputValue.toLowerCase().trim()));
 //         gridContainer.innerHTML = '';
 //         return newData.forEach((item) => createItem(item.symbol, item.title, item.keywords));
 //     }
@@ -86,8 +86,8 @@ let input = document.querySelector('#input')
 
 function inputSearch() {
     input.addEventListener('input', () => {
-        let inputValue = input.value;
-        let newData = data.filter((item) => item.title.toLowerCase().includes(inputValue.toLowerCase().trim()));
+        const inputValue = input.value;
+        const newData = data.filter((item) => item.title.toLowerCase().includes(inputValue.toLowerCase().trim()));
         gridContainer.innerHTML = '';
         return newData.forEach((item) => createItem(item.symbol, item.title, item.keywords));
     })
