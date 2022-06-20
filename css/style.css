@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+body {
+    background-color: #DEE2E6;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.header {
+    background: linear-gradient(92.33deg, #087990 0.12%, #055160 100%);
+    border: 1px solid #CED4DA;;
+    height: 295px;
+    position: relative;
+    padding-top: 68px;
+    padding-bottom: 100px;
+    text-align: center;;
+}
+.header__title {
+    margin: 0 auto;
+    margin-bottom: 4px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87px;
+    color: #CFF4FC;
+}
+.header__subtitle {
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+    color: #CFF4FC;
+}
+
+.header__input {
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+    width: 820px;
+    height: 64px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding-left: 32px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+}
+.header__input::placeholder {
+    color: #ABB5BE;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+.main {
+    padding: 80px 0 50px 0;
+}
+.footer__underline{
+    width: 100%;
+    height: 1px;
+    background: #CED4DA;
+}
+.grid {
+    display: grid;
+    gap: 22px 19px;
+    grid-template-columns: 1fr 1fr 1fr
+}
+.item {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+}
+.item__emoji {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 18px;
+}
+.item__title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #000000;
+    margin-bottom: 12px;
+}
+.item__keywords {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #3F444A;
+}
+.footer {
+    padding-bottom: 17px;
+}
+.footer__text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #6C757D;
+    text-align: center;
+    margin-top: 13px;
+}
